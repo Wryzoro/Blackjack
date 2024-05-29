@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.menu-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.menu-container h1 {
+    margin-bottom: 20px;
+}
+
+.menu-container button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
