@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Menu</title>
+    <title>Blackjack Main Menu</title>
     <link rel="stylesheet" href="/Blackjack/style/MainMenu.css">
-    <script defer src="js/menu.js"></script>
 </head>
 <body>
-    <div class="menu-container">
-        <h1>Main Menu</h1>
-        <button id="start-game">Start Game</button>
-        <button id="view-stats">View Statistics</button>
-        <button id="logout">Logout</button>
+    <div class="main-menu">
+        <h1>Blackjack</h1>
+        <nav>
+            <ul>
+                <li><button onclick="showSection('play')">Jogar</button></li>
+                <li><button onclick="showSection('scores')">Pontuações</button></li>
+                <li><button onclick="showSection('help')">Ajuda</button></li>
+                <li><button onclick="showSection('credits')">Créditos</button></li>
+            </ul>
+        </nav>
+        <section id="play" class="content-section">
+            <h2>Jogar</h2>
+            <a href="jogo.html" class="play-button">Iniciar Jogo</a>
+        </section>
+        <section id="scores" class="content-section">
+            <h2>Pontuações</h2>
+            <p>Veja as pontuações mais altas!</p>
+        </section>
+        <section id="help" class="content-section">
+            <h2>Ajuda</h2>
+            <p>Como jogar blackjack.</p>
+        </section>
+        <section id="credits" class="content-section">
+            <h2>Créditos</h2>
+            <p>Desenvolvedores e contribuições.</p>
+        </section>
     </div>
+    <script src="/Blackjack/script/MainMenu.js"></script>
 </body>
 </html>
